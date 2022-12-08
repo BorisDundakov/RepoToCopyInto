@@ -1,11 +1,8 @@
 name: Comment yaml file
 
 on:
-  push:
-    branches:
-      - "main"
-
-
+  workflow_dispatch:
+  
 jobs:
   update-Readme-File:
    runs-on: ubuntu-latest
