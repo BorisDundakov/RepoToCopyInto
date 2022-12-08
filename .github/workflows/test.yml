@@ -1,2 +1,27 @@
-name: Update-Readme-File
-description: 'updating README.md with a readme from another repo'
+name: Comment yaml file
+
+on:
+  push:
+    branches:
+      - "main"
+
+
+jobs:
+  update-Readme-File:
+   runs-on: ubuntu-latest
+   name: update-Readme-File
+
+   steps:
+     - name: Checkout
+       uses: actions/@checkoutv3
+    
+     - name: Set Node.js 16.x
+       uses: actions/setup-node@v3.5.1
+       with:
+         node-version: 16.x
+
+     - name: Install dependencies
+       run: npm install
+
+     - name: Building action
+       run: npm run build
