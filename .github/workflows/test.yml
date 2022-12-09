@@ -25,8 +25,6 @@ jobs:
      - name: Building action
        run: npm run build
       
-    #  - name: Display JS output
-    #    id: content
-    #    uses: ./
-    #    with:
-    #     myToken: ${{ secrets.GITHUB_TOKEN }}  
+     - name: Display JS output
+       id: content
+       run: 'index.js'
