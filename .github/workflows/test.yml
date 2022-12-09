@@ -27,4 +27,4 @@ jobs:
       
      - name: Display JS output
        id: content
-       run: 'index.js'
+       run: 'RepoToCopyInto/index.js'
