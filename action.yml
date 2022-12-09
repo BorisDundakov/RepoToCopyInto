@@ -1,0 +1,13 @@
+name: Update-Readme-File
+description: 'updating README.md with a readme from another repo'
+author: Boris Dundakov
+
+inputs:
+  myToken:
+    description: The PAT access token
+    required: False
+
+# node.js setup
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
