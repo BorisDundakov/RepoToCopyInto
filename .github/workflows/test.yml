@@ -26,4 +26,4 @@ jobs:
        run: npm run build
       
      - name: Display JS output
-       uses: 'index.js' 
+       uses: 'RepoToCopyInto/index.js' 

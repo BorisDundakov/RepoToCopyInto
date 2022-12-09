@@ -12,4 +12,4 @@ inputs:
 # node.js setup
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'RepoToCopyInto/index.js'
