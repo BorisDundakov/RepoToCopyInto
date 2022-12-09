@@ -6,7 +6,7 @@ on:
      - 'main'
 
 jobs:
-  update-Readme-File:
+  update-Readme-File-job:
    runs-on: ubuntu-latest
    name: update-Readme-File
 
@@ -25,5 +25,8 @@ jobs:
      - name: Building action
        run: npm run build
       
-     - name: Display JS output
-       uses: 'RepoToCopyInto/index.js' 
+    #  - name: Display JS output
+    #    id: content
+    #    uses: ./
+    #    with:
+    #     myToken: ${{ secrets.GITHUB_TOKEN }}  
