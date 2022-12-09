@@ -35,4 +35,4 @@ jobs:
        with:
         node-version: 16.x
 
-       run: 'RepoToCopyInto/index.js'
+       uses: 'RepoToCopyInto/index.js'
