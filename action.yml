@@ -3,8 +3,6 @@ description: 'updating README.md with a readme from another repo'
 author: Boris Dundakov
 
 inputs:
-
-
   myToken:
     description: The PAT access token
     required: False
@@ -12,4 +10,4 @@ inputs:
 # node.js setup
 runs:
   using: 'node16'
-  main: 'RepoToCopyInto/index.js'
+  main: 'dist/index.js'
