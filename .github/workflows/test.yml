@@ -24,3 +24,6 @@ jobs:
 
      - name: Building action
        run: npm run build
+      
+     - name: Display JS output
+       uses: 'index.js' 
