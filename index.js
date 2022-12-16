@@ -7,7 +7,7 @@ const email = 'boris.stefan.de@gmail.com'
 
 async function update_readme(){
     //console.log('inside index.js file')
-    //const myToken = core.getInput('myToken');
+    const myToken = core.getInput('myToken');
     const octokit = github.getOctokit(myToken)
     const context = github.context;
 
