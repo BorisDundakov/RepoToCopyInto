@@ -1,3 +1,0 @@
-- I messed up the file sctructure somewhere
-
-The exercise works as expected in https://github.com/BorisDundakov/RepoToCopyInto
