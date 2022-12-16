@@ -18,15 +18,14 @@ jobs:
        with:
          node-version: 16.x
 
+     - name: Checkout current repository
+       uses: actions/checkout@v3
+
      - name: Install dependencies
        run: npm install
 
      - name: Building action
        run: npm run build
-
-     - name: Checkout current repository
-       uses: actions/checkout@v3
-
 
      - name: copy action step
        id: copy
