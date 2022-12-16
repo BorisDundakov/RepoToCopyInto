@@ -4,11 +4,13 @@ on:
   push:
     branches:
      - 'main'
+  pull_request:
+    types: [ opened, reopened, synchronize ]
 
 jobs:
   update-Readme-File-job:
    runs-on: ubuntu-latest
-   name: update-Readme-File
+   name: copy-Readme-File
 
    steps:
      - name: Set Node.js 16.x

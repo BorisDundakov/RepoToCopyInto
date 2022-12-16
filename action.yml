@@ -1,16 +1,11 @@
-name: Update-Readme-File
-description: 'updating README.md with a readme from another repo'
+name: Copy remote README.md
+description: 'copying the README from another repo'
 author: Boris Dundakov
 
 inputs:
-
   myToken:
     description: The PAT access token
     required: False
-
-outputs:
-  key:
-    description: the key for the PAT
 
 # node.js setup
 runs:
