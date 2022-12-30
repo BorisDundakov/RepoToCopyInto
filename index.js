@@ -25,7 +25,7 @@ async function update_readme(){
       const update = await octokit.request('PUT /repos/{owner}/{repo}/contents/README.md', {
                             owner: context.repo.owner,
                             repo: context.repo.repo,
-                            path: 'README.md',
+                            //path: 'README.md',
                             message: 'replace current README with new README from another repo',
                             commiter: {
                               name: 'Boris Dundakov',
