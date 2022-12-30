@@ -17,13 +17,14 @@ async function update_readme(){
         repo: 'homework4-BorisDundakov'
       })
       
-      console.log(sha)
+     //console.log(sha)
       
       const { data: {content}} = await octokit.request('GET /repos/BorisDundakov/RepoToCopyFrom/contents/README.md/', {
         owner: 'BorisDundakov',
         repo: 'RepoToCopyFrom'
       })
-      console.log(content)
+      
+      //console.log(content)
       
       const update = await octokit.request('PUT /repos/{owner}/{repo}/contents/README.md', {
                             owner: context.repo.owner,
