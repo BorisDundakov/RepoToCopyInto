@@ -1,14 +1,14 @@
-name: Copy remote README.md
-description: 'copying the README from another repo'
-author: Boris Dundakov
+# name: Copy remote README.md
+# description: 'copying the README from another repo'
+# author: Boris Dundakov
 
-inputs:
-  myToken:
-    description: The PAT access token
-    required: False
+# inputs:
+#   myToken:
+#     description: The PAT access token
+#     required: False
 
-# node.js setup
-runs:
-  using: 'node16'
-  main: 'dist/index.js'
+# # node.js setup
+# runs:
+#   using: 'node16'
+#   main: 'dist/index.js'
   
